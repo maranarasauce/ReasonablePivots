@@ -17,6 +17,11 @@ namespace ReasonablePivots
 
             this.RegisterValueChangedCallback(OnValueChanged);
 
+            Tools.pivotModeChanged += Tools_pivotModeChanged; Tools_pivotModeChanged();
+        }
+
+        private void Tools_pivotModeChanged()
+        {
             value = UnityEditor.Tools.pivotMode == PivotMode.Pivot;
             UpdateIcons();
         }
@@ -45,6 +50,11 @@ namespace ReasonablePivots
 
             this.RegisterValueChangedCallback(OnValueChanged);
 
+            Tools.pivotRotationChanged += Tools_pivotRotationChanged; Tools_pivotRotationChanged();
+        }
+
+        private void Tools_pivotRotationChanged()
+        {
             value = UnityEditor.Tools.pivotRotation == PivotRotation.Global;
             UpdateIcons();
         }

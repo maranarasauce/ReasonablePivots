@@ -4,6 +4,7 @@ A toolbar script for the Unity Editor that restores the most sensible version of
 ## Example
 The Reasonable Pivots implementation of pivot toggles:
 ![The Reasonable Pivots implementation of pivot toggles](pivots_good.gif)
+
 The official implementation of pivot toggles as of Unity 2021.3.31f1:
 ![The official implementation of pivot toggles as of Unity 2021](pivots_bad.gif)
 
